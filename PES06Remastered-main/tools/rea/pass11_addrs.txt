@@ -1,0 +1,4 @@
+0x004051D0  called right before mode selection / CreateDevice
+0x004059A0  queried before the device calls
+0x00404B30  returns the value stored in DAT_00f83ec4
+0x00403CE0  called right after a successful CreateDevice

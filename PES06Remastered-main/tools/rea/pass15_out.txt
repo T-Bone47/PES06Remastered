@@ -1,0 +1,34 @@
+=== program: pes6.exe ===
+
+################ 0x0065B4E0  NewFileFromAFS - the AFS request entry point ################
+// containing function: thunk_FUN_044ce650 @ 0065b4e0
+// signature: undefined thunk_FUN_044ce650(void)
+// exact entry: true
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void thunk_FUN_044ce650(void)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x0065b4e0. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*_DAT_0446d6ec)();
+  return;
+}
+
+
+
+################ 0x008CD490  the unpack routine ################
+// containing function: FUN_008cd490 @ 008cd490
+// signature: undefined FUN_008cd490(void)
+// exact entry: true
+
+int FUN_008cd490(undefined4 param_1,int param_2,undefined4 param_3,undefined4 param_4,int *param_5)
+
+{
+  FUN_008cd340(param_2,param_3,param_4);
+  FUN_00401000(param_2,*param_5 + param_2);
+  return param_2;
+}
+
+

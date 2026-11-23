@@ -1,0 +1,135 @@
+{
+  "name": "PES 6 Legacy Remaster Curated HD Asset Pack",
+  "version": "2.1.0",
+  "author": "PES 6 Remaster Engineering Team",
+  "vram_budget_mb": 1500,
+  "description": "Ultra-HD Photorealistic procedural companion textures with SHA-256 cryptographic verification.",
+  "assets": [
+    {
+      "id": "pitch_stadium_default_turf",
+      "category": "pitch",
+      "crc32": "0x00000000",
+      "orig_width": 2048,
+      "orig_height": 1024,
+      "file": "pitch\\stadium_default_turf.png",
+      "sha256": "795202b1d67834e0c1fa3610b1c92be4d5c464c1e302a268c36867f4a294e495"
+    },
+    {
+      "id": "pitch_turf_square_fallback",
+      "category": "pitch",
+      "crc32": "0x00000000",
+      "orig_width": 1024,
+      "orig_height": 1024,
+      "file": "pitch\\turf_square.png",
+      "sha256": "fbb1f60751e5c340c36e3be78f338b028eb46f1c5cf4790847285659122232f7"
+    },
+    {
+      "id": "kit_team_alpha_home",
+      "category": "kit",
+      "crc32": "0x00000000",
+      "orig_width": 512,
+      "orig_height": 256,
+      "file": "kits\\team_alpha_home.png",
+      "sha256": "5fd86068e2c92f3538f98a110314c66f0ffbe0f775da3c88a670dac5cb38d05f"
+    },
+    {
+      "id": "kit_team_beta_away",
+      "category": "kit",
+      "crc32": "0x2B3C4D5E",
+      "orig_width": 512,
+      "orig_height": 256,
+      "file": "kits\\team_beta_away.png",
+      "sha256": "1883dcfa5f6d25f1197fc6b48da070c60e501a64940bef82e3505f1d616309d0"
+    },
+    {
+      "id": "ball_match_classic",
+      "category": "ball",
+      "crc32": "0x6F7A8B9C",
+      "orig_width": 256,
+      "orig_height": 256,
+      "file": "balls\\ball_match_classic.png",
+      "sha256": "648dee60c434f8abda5c51046f1d03e98c85879c3bb0f15b9683f4b862916b52"
+    },
+    {
+      "id": "ui_radar_overlay",
+      "category": "ui",
+      "crc32": "0x00000000",
+      "orig_width": 256,
+      "orig_height": 128,
+      "file": "ui\\radar_overlay.png",
+      "sha256": "4a17f5f49eddf748b5bbefed39451ca1d8eb9eaaaf1845225176c2a0f8b60747"
+    },
+    {
+      "id": "pitch_adboard_default",
+      "category": "pitch",
+      "crc32": "0x00000000",
+      "orig_width": 512,
+      "orig_height": 64,
+      "file": "pitch\\\\adboard_default.png",
+      "sha256": "44fe5e1520a1c4745727dc3f54524cd82b23db03ab8cc2b2b4ba02d396a757a9"
+    },
+    {
+      "id": "stadium_crowd_default",
+      "category": "stadium",
+      "crc32": "0x00000000",
+      "orig_width": 256,
+      "orig_height": 64,
+      "file": "stadium\\\\crowd_default.png",
+      "sha256": "18f41f86123954711b9d5f39b1f7effff69702e87c1172d1999dec2fcb9a4193"
+    },
+    {
+      "id": "pitch_goal_net_default",
+      "category": "pitch",
+      "crc32": "0x00000000",
+      "orig_width": 256,
+      "orig_height": 256,
+      "file": "pitch\\\\goal_net_default.png",
+      "sha256": "3bfafde0d6c8afc5ceb1e8ecce7d888b6d5146dada423d0eb621f30b36057977"
+    },
+    {
+      "id": "ui_crest_arsenal",
+      "category": "ui",
+      "crc32": "0x00000000",
+      "orig_width": 256,
+      "orig_height": 256,
+      "file": "ui\\\\crests\\\\crest_arsenal.png",
+      "sha256": "22f07cbf93dde5fc63f7e36c602c606fa661bdde6fbf319ef02586eaa0813df2"
+    },
+    {
+      "id": "ui_crest_chelsea",
+      "category": "ui",
+      "crc32": "0x00000000",
+      "orig_width": 256,
+      "orig_height": 256,
+      "file": "ui\\\\crests\\\\crest_chelsea.png",
+      "sha256": "c0ea3556230617c70758e09cd8bc16a2abcfe12a6f10d021fdc0c7096f660a5b"
+    },
+    {
+      "id": "ui_crest_barcelona",
+      "category": "ui",
+      "crc32": "0x00000000",
+      "orig_width": 256,
+      "orig_height": 256,
+      "file": "ui\\\\crests\\\\crest_barcelona.png",
+      "sha256": "3c6515e6551208ed14a7ec4565eae7c6cddc5d0fcb3ca65e9276705cabba2fe3"
+    },
+    {
+      "id": "ui_crest_realmadrid",
+      "category": "ui",
+      "crc32": "0x00000000",
+      "orig_width": 256,
+      "orig_height": 256,
+      "file": "ui\\\\crests\\\\crest_realmadrid.png",
+      "sha256": "313d26ae96e526fb479a259d29b1499386b4b044121c0c6845e0f8651517f4fe"
+    },
+    {
+      "id": "ui_emblem_ucl",
+      "category": "ui",
+      "crc32": "0x00000000",
+      "orig_width": 256,
+      "orig_height": 256,
+      "file": "ui\\\\crests\\\\emblem_ucl.png",
+      "sha256": "0cf4c18e0d56469d89c3a01a08c0c309ce11a3af043014f71eabf3920a935e5d"
+    }
+  ]
+}

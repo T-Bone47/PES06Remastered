@@ -1,0 +1,63 @@
+{
+  "name": "PES 6 Legacy Remaster Curated HD Asset Pack",
+  "version": "1.0.0",
+  "author": "PES 6 Remaster Engineering Team",
+  "vram_budget_mb": 1500,
+  "description": "Deterministic HD companion textures with SHA-256 integrity and VRAM budget enforcement.",
+  "assets": [
+    {
+      "id": "kit_team_alpha_home",
+      "category": "kit",
+      "crc32": "0x1A2B3C4D",
+      "orig_width": 512,
+      "orig_height": 256,
+      "file": "kits\\team_alpha_home.png",
+      "sha256": "d2147f37433b39bc1c6818ab4633460d0b2c3ebcebf0894e78d68c6ac833bbcc"
+    },
+    {
+      "id": "kit_team_beta_away",
+      "category": "kit",
+      "crc32": "0x2B3C4D5E",
+      "orig_width": 512,
+      "orig_height": 256,
+      "file": "kits\\team_beta_away.png",
+      "sha256": "009203ec232e479c3516e038c3d599ab48f829944f4f04f0b7e39b5900f7ab9c"
+    },
+    {
+      "id": "face_player_001",
+      "category": "face",
+      "crc32": "0x3C4D5E6F",
+      "orig_width": 256,
+      "orig_height": 256,
+      "file": "faces\\player_001.png",
+      "sha256": "21674bd4d7fe5c067ad78f25b7fea821f95c8ee23bf2ccdde5f9625a40919677"
+    },
+    {
+      "id": "pitch_stadium_default_turf",
+      "category": "pitch",
+      "crc32": "0x5E6F7A8B",
+      "orig_width": 1024,
+      "orig_height": 512,
+      "file": "pitch\\stadium_default_turf.png",
+      "sha256": "6c0c3c8e1ebff5a15c1b7fbd403142eab96355fb25006256076df51c3e3beb1a"
+    },
+    {
+      "id": "ball_match_classic",
+      "category": "ball",
+      "crc32": "0x6F7A8B9C",
+      "orig_width": 256,
+      "orig_height": 256,
+      "file": "balls\\ball_match_classic.png",
+      "sha256": "ae47473e14efb67e38311ddd04b84107e146c46e21be34dba228e98c44272611"
+    },
+    {
+      "id": "ui_radar_overlay",
+      "category": "ui",
+      "crc32": "0x7A8B9C0D",
+      "orig_width": 256,
+      "orig_height": 128,
+      "file": "ui\\radar_overlay.png",
+      "sha256": "cb3d5cd44baca5070cb052e97a7f01bc2b1c65234c695212fd29503b77d487b6"
+    }
+  ]
+}

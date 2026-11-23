@@ -1,0 +1,39 @@
+# Addresses for the second Ghidra pass (run against the saved, already-analysed project).
+# Format: <va> <note>
+
+# --- Direct3D init path (PES6 graphics) ---
+0x00404D27  game D3D init function: calls Direct3DCreate8 then vtable slot 0x34
+0x0042C050  import thunk: jmp [IAT Direct3DCreate8]
+0x00404D51  the call site: call dword ptr [ecx+0x34]
+
+# --- the address that did not look like code ---
+0x006094B0  ADDR_MenuPageSetup (read as zeros) - needs re-location
+0x006094F0  fn_menu_LoadPageTeams
+
+# --- kit / squad core: verify the documented semantics ---
+0x00865240  fn_GetTeamKitData
+0x00864EF0  fn_GetClubTeamKitBase
+0x00862710  fn_GetTeamPlayerID
+0x00861B90  orig_GetPlayerRecord (worker)
+0x00861D20  orig_GetTeamPlayerID (public wrapper)
+
+# --- panel / UI ---
+0x00B09050  orig_CreateLeagueSelectionPanel
+0x00B08B40  orig_PanelRefresh
+0x00B07B00  fn_SetTeamList
+
+# --- bone / animation ---
+0x0094E380  fn_ResolveBone
+0x00950490  fn_GetBoneWorldPosition
+0x00950580  fn_GetBoneScale
+0x00955320  fn_TransformNode
+
+# --- formation / match setup ---
+0x00966C70  fn_HasCustomFormation
+0x00968700  orig_Match_SetupKitData
+0x00967170  orig_FillKitVariantSlot
+
+# --- league selector ---
+0x009D2EC0  ADDR_SetLeagueTeamCount
+0x009EDC40  fn_InitClubDisplayState
+0x009EE940  orig_SetTeamList

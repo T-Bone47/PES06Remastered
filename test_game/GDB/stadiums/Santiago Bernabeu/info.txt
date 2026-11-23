@@ -1,0 +1,4 @@
+# Stadium info file
+built = 1947
+capacity = 81044
+city = Madrid

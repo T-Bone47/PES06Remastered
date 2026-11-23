@@ -1,0 +1,108 @@
+=== program: pes6.exe ===
+
+################ 0x00415310  AFS file existence check ################
+// containing function: FUN_00415310 @ 00415310
+// signature: undefined FUN_00415310(void)
+// exact entry: true
+
+undefined4 FUN_00415310(void)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  DWORD DVar3;
+  uint uVar4;
+  int *piVar5;
+  int local_158;
+  char *local_154;
+  char *local_150;
+  undefined4 local_14c;
+  char *local_148;
+  char *local_144;
+  undefined4 local_140;
+  char *local_13c;
+  char *local_138;
+  undefined4 local_134;
+  char *local_130;
+  char *local_12c;
+  undefined4 local_128;
+  char *local_124;
+  char *local_120;
+  undefined4 local_11c;
+  char *local_118;
+  char *local_114;
+  undefined4 local_110;
+  char *local_10c;
+  char *local_108;
+  CHAR local_104 [260];
+  
+  local_158 = -1;
+  local_154 = "0_text.afs";
+  local_150 = "0_sound.afs";
+  local_14c = 0;
+  local_148 = "e_text.afs";
+  local_144 = "e_sound.afs";
+  local_140 = 1;
+  local_13c = "f_text.afs";
+  local_138 = "f_sound.afs";
+  local_134 = 2;
+  local_130 = "g_text.afs";
+  local_12c = "g_sound.afs";
+  local_128 = 3;
+  local_124 = "i_text.afs";
+  local_120 = "i_sound.afs";
+  local_11c = 4;
+  local_118 = "s_text.afs";
+  local_114 = "s_sound.afs";
+  local_110 = 9;
+  local_10c = "p_text.afs";
+  local_108 = "p_sound.afs";
+  uVar4 = 0;
+  piVar5 = &local_158;
+  do {
+    if ((*piVar5 < 0) || (iVar1 = FUN_00415190(*piVar5), iVar1 != 0)) {
+      uVar2 = FUN_004125b0(piVar5[1]);
+      FUN_0041be25(local_104,&DAT_00b7e0e8,uVar2);
+      DVar3 = GetFileAttributesA(local_104);
+      if (DVar3 == 0xffffffff) {
+        return 0;
+      }
+      uVar2 = FUN_004125b0(piVar5[2]);
+      FUN_0041be25(local_104,&DAT_00b7e0e8,uVar2);
+      DVar3 = GetFileAttributesA(local_104);
+      if (DVar3 == 0xffffffff) {
+        return 0;
+      }
+    }
+    uVar4 = uVar4 + 1;
+    piVar5 = piVar5 + 3;
+    if (6 < uVar4) {
+      return 1;
+    }
+  } while( true );
+}
+
+
+
+################ 0x00415460  CD/DVD-ROM check ################
+// containing function: FUN_00415460 @ 00415460
+// signature: undefined FUN_00415460(void)
+// exact entry: true
+
+undefined4 FUN_00415460(void)
+
+{
+  UINT UVar1;
+  CHAR local_104 [2];
+  undefined1 local_102;
+  
+  GetModuleFileNameA((HMODULE)0x0,local_104,0x104);
+  local_102 = 0;
+  UVar1 = GetDriveTypeA(local_104);
+  if ((UVar1 != 5) && (UVar1 != 6)) {
+    return 1;
+  }
+  return 0;
+}
+
+

@@ -1,0 +1,4 @@
+# PES 6 Legacy Remaster - Hair Server Map
+# Format: <player_id>,"<relative_path_to_bin>"[,<transparency 0-255>]
+# All custom hair overrides are disabled.
+# Reverted to 100% original vanilla game hair from 0_text.afs.

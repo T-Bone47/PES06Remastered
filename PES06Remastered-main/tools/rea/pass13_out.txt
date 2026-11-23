@@ -1,0 +1,95 @@
+=== program: pes6.exe ===
+
+################ 0x00410E50  contains "AFS File not found." ################
+// containing function: FUN_00410e50 @ 00410e50
+// signature: undefined FUN_00410e50(void)
+// exact entry: true
+
+undefined4 FUN_00410e50(void)
+
+{
+  int iVar1;
+  HANDLE hObject;
+  DWORD DVar2;
+  HWND pHVar3;
+  
+  iVar1 = FUN_00415460();
+  if (iVar1 == 0) {
+    FUN_00410e10("This program cannot be run from the CD/DVD-ROM.");
+  }
+  iVar1 = thunk_FUN_0475d230();
+  if (iVar1 == 0) {
+    FUN_00410e10("The game is not properly installed.");
+  }
+  iVar1 = FUN_00415310();
+  if (iVar1 == 0) {
+    FUN_00410e10("AFS File not found.");
+  }
+  hObject = CreateMutexA((LPSECURITY_ATTRIBUTES)0x0,1,"{87F2B5F7-09C3-4520-AB5E-16313ADB035B}");
+  if (hObject == (HANDLE)0x0) {
+    thunk_FUN_044b7610(0,"mutex");
+  }
+  DVar2 = GetLastError();
+  if (DVar2 == 0xb7) {
+    CloseHandle(hObject);
+    pHVar3 = FindWindowA((LPCSTR)0x0,"Settings");
+    if (pHVar3 != (HWND)0x0) {
+      FUN_00410e10("This program cannot be started if \"Settings\" is performing.");
+    }
+    pHVar3 = FindWindowA("{20418978-752D-491c-AF1E-A2EDE086E000}","Pro Evolution Soccer 6");
+    if (pHVar3 != (HWND)0x0) {
+      ShowWindow(pHVar3,9);
+      SetForegroundWindow(pHVar3);
+    }
+    return 0;
+  }
+  return 1;
+}
+
+
+
+################ 0x0088F150  AFS path parsing (strrchr) + adxt_StartAfs errors ################
+// containing function: _strrchr @ 0088f150
+// signature: char * __cdecl _strrchr(char * _Str, int _Ch)
+// exact entry: true
+
+/* Library Function - Single Match
+    _strrchr
+   
+   Library: Visual Studio 2003 Release */
+
+char * __cdecl _strrchr(char *_Str,int _Ch)
+
+{
+  char cVar1;
+  int iVar2;
+  char *pcVar3;
+  char *pcVar4;
+  
+  iVar2 = -1;
+  do {
+    pcVar4 = _Str;
+    if (iVar2 == 0) break;
+    iVar2 = iVar2 + -1;
+    pcVar4 = _Str + 1;
+    cVar1 = *_Str;
+    _Str = pcVar4;
+  } while (cVar1 != '\0');
+  iVar2 = -(iVar2 + 1);
+  pcVar4 = pcVar4 + -1;
+  do {
+    pcVar3 = pcVar4;
+    if (iVar2 == 0) break;
+    iVar2 = iVar2 + -1;
+    pcVar3 = pcVar4 + -1;
+    cVar1 = *pcVar4;
+    pcVar4 = pcVar3;
+  } while ((char)_Ch != cVar1);
+  pcVar3 = pcVar3 + 1;
+  if (*pcVar3 != (char)_Ch) {
+    pcVar3 = (char *)0x0;
+  }
+  return pcVar3;
+}
+
+

@@ -1,0 +1,37 @@
+﻿team,player,candidate_rank,photo_year,file_title,commons_page,view,quality_caveat
+Arsenal,Thierry Henry,1,2006,Thierry Henry portrait.jpg,https://commons.wikimedia.org/wiki/File:Thierry_Henry_portrait.jpg,portrait/action crop,"Low resolution crop (189x193); useful for era, not direct texture transfer"
+Arsenal,Thierry Henry,2,2006,Thierry Henry Charlton.jpg,https://commons.wikimedia.org/wiki/File:Thierry_Henry_Charlton.jpg,action,Action photo; inspect profile angle
+Arsenal,Thierry Henry,3,2006,Thierry Henry.jpg,https://commons.wikimedia.org/wiki/File:Thierry_Henry.jpg,action,"2006 Arsenal photo, very narrow; backup reference"
+Arsenal,Cesc Fàbregas,1,2006,Cesc Fabregas.jpg,https://commons.wikimedia.org/wiki/File:Cesc_Fabregas.jpg,action portrait,2006 era; verify face visibility
+Arsenal,Cesc Fàbregas,2,2006,Fabregas shooting.jpg,https://commons.wikimedia.org/wiki/File:Fabregas_shooting.jpg,action,Supplemental
+Arsenal,Gilberto Silva,1,2006,Gilberto Silva.png,https://commons.wikimedia.org/wiki/File:Gilberto_Silva.png,action,March 2006; low resolution
+Arsenal,Gilberto Silva,2,2006,Gilberto Silva NorthLondon.jpg,https://commons.wikimedia.org/wiki/File:Gilberto_Silva_NorthLondon.jpg,action,2006 alternative
+Arsenal,Fredrik Ljungberg,1,2006,Fredrik Ljungberg 060602.jpg,https://commons.wikimedia.org/wiki/File:Fredrik_Ljungberg_060602.jpg,action,Sweden June 2006; inspect face visibility
+Arsenal,Fredrik Ljungberg,2,2006,Fredrik Ljungberg 2006.jpg,https://commons.wikimedia.org/wiki/File:Fredrik_Ljungberg_2006.jpg,team crop,2006 fallback
+Arsenal,Robin van Persie,1,2006,Robin van Persie cropped.jpg,https://commons.wikimedia.org/wiki/File:Robin_van_Persie_cropped.jpg,cropped portrait,2006 training; moderate resolution
+Arsenal,Robin van Persie,2,2006,RVP Holland training.jpg,https://commons.wikimedia.org/wiki/File:RVP_Holland_training.jpg,training,2006 training
+Barcelona,Ronaldinho,1,2006,Ronaldinho061115.jpg,https://commons.wikimedia.org/wiki/File:Ronaldinho061115.jpg,action,"Nov 2006, 1200x1600; first priority"
+Barcelona,Ronaldinho,2,2006,Ronaldinho-7-5-2006.jpg,https://commons.wikimedia.org/wiki/File:Ronaldinho-7-5-2006.jpg,celebration,"May 2006 season title, 693x866"
+Barcelona,Ronaldinho,3,2006,Ronaldinho061115-01.jpg,https://commons.wikimedia.org/wiki/File:Ronaldinho061115-01.jpg,action,Nov 2006 alternative
+Barcelona,Samuel Eto'o,1,2006,Samuel-Etoo-7-5-2006.jpg,https://commons.wikimedia.org/wiki/File:Samuel-Etoo-7-5-2006.jpg,celebration,"May 2006, 378x424"
+Barcelona,Samuel Eto'o,2,2006,Samuel etoo.JPG,https://commons.wikimedia.org/wiki/File:Samuel_etoo.JPG,action,Low resolution
+Barcelona,Deco,1,2006,Deco 21dec2006.jpg,https://commons.wikimedia.org/wiki/File:Deco_21dec2006.jpg,action,Dec 2006 500x675
+Barcelona,Deco,2,2005,Decobarca.jpg,https://commons.wikimedia.org/wiki/File:Decobarca.jpg,action,2005-era alternative; inspect crop
+Barcelona,Lionel Messi,1,2006,Lionel Messi Barca training.jpg,https://commons.wikimedia.org/wiki/File:Lionel_Messi_Barca_training.jpg,training,Aug 2006 360x272; low detail
+Barcelona,Lionel Messi,2,2007,Lionel Messi 31mar2007.jpg,https://commons.wikimedia.org/wiki/File:Lionel_Messi_31mar2007.jpg,action,March 2007 close era; inspect quality
+Barcelona,Lionel Messi,3,2006,Barcelona FC v NY Red Bulls.jpg,https://commons.wikimedia.org/wiki/File:Barcelona_FC_v_NY_Red_Bulls.jpg,match,"Aug 2006 wide shot, unlikely facial-detail quality"
+Chelsea,Didier Drogba,1,2006,Didier Drogba complains.jpg,https://commons.wikimedia.org/wiki/File:Didier_Drogba_complains.jpg,action,2006 Chelsea; facial expression
+Chelsea,Didier Drogba,2,2007,Drogba chelsea.jpg,https://commons.wikimedia.org/wiki/File:Drogba_chelsea.jpg,action,"Feb 2007, 627x806"
+Chelsea,Frank Lampard,1,2006,Frank Lampard cropped.jpg,https://commons.wikimedia.org/wiki/File:Frank_Lampard_cropped.jpg,cropped action,"March 2006, limited resolution"
+Chelsea,Frank Lampard,2,2007,Frank lampard.jpg,https://commons.wikimedia.org/wiki/File:Frank_lampard.jpg,action,Feb 2007 alternative
+Chelsea,John Terry,1,2006,John Terry original.jpg,https://commons.wikimedia.org/wiki/File:John_Terry_original.jpg,celebration,2006 team bus photo; may contain others
+Chelsea,John Terry,2,2006,John Terry during a match vs Everton at Stamford Bridge in 2006.jpg,https://commons.wikimedia.org/wiki/File:John_Terry_during_a_match_vs_Everton_at_Stamford_Bridge_in_2006.jpg,action,"2006 game, 327x422"
+Chelsea,John Terry,3,2006,John Terry.jpg,https://commons.wikimedia.org/wiki/File:John_Terry.jpg,action,2006 alternative
+Real_Madrid,Zinedine Zidane,1,2006,Zinedine zidane wcf 2006.jpg,https://commons.wikimedia.org/wiki/File:Zinedine_zidane_wcf_2006.jpg,2006 World Cup,High-res 3456x2304; exact crop/angle manually inspect
+Real_Madrid,Zinedine Zidane,2,2006,Zinedine zidane wcf 2006-edit.jpg,https://commons.wikimedia.org/wiki/File:Zinedine_zidane_wcf_2006-edit.jpg,cropped,Edited derivative of same photo; not an independent angle
+Real_Madrid,Ronaldo Nazário,1,2005,Ronaldo Real Madrid.jpg,https://commons.wikimedia.org/wiki/File:Ronaldo_Real_Madrid.jpg,match,"2005 Real Madrid era, probably wide; do not confuse with Cristiano Ronaldo"
+Real_Madrid,Ronaldo Nazário,2,2005,Ronaldo.jpeg,https://commons.wikimedia.org/wiki/File:Ronaldo.jpeg,portrait/action,"2005, inspect actual face and license before use"
+Real_Madrid,David Beckham,1,2006,Beckham warmingup.jpg,https://commons.wikimedia.org/wiki/File:Beckham_warmingup.jpg,warm-up,Aug 2006 Real Madrid
+Real_Madrid,David Beckham,2,2006,David Beckham in Madrid.jpg,https://commons.wikimedia.org/wiki/File:David_Beckham_in_Madrid.jpg,action,2006-era Madrid; verify exact date
+Real_Madrid,David Beckham,3,2006,David Beckham.jpg,https://commons.wikimedia.org/wiki/File:David_Beckham.jpg,action,June 2006 alternative; source page includes extra permission language; review
+Real_Madrid,Roberto Carlos,1,2006,Roberto Carlos.JPG,https://commons.wikimedia.org/wiki/File:Roberto_Carlos.JPG,training,"Aug 2006 Brazilian national team, 893x1361"

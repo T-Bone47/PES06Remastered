@@ -1,0 +1,5 @@
+# Ballserver Map
+"Nike Total 90 Aerow II (Premier League)","classic_mdl.bin","nike_t90_aerow_blue.png"
+"Nike Total 90 Aerow II (Hi-Vis Winter)","classic_mdl.bin","nike_t90_aerow_hivis.png"
+"Adidas Teamgeist (World Cup 2006)","teamgeist_mdl.bin","adidas_teamgeist_wc2006.png"
+"Adidas Finale Paris (Champions League)","classic_mdl.bin","adidas_finale_paris2006.png"

@@ -1,0 +1,10 @@
+# StadiumServer Map — Authentic 2006 Club Venues
+# Format: <TeamID>,"<Stadium_Folder>"
+64,"Highbury Stadium"
+69,"Stamford Bridge"
+72,"Anfield"
+74,"Old Trafford"
+143,"Camp Nou"
+153,"Santiago Bernabeu"
+115,"San Siro"
+111,"San Siro"

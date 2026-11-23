@@ -1,0 +1,10 @@
+# Ballserver Home Ball Map
+# Format: <team_id>, <ball_id> (1-based index in map.txt)
+64, 1
+69, 1
+72, 1
+74, 1
+143, 1
+153, 1
+111, 1
+115, 1

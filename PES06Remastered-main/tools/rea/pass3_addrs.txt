@@ -1,0 +1,3 @@
+0x00404C60  D3D init function (sets 640x480 globals, calls Direct3DCreate8)
+0x044CC450  thunk called before Direct3DCreate8; must return 0
+0x00404D3A  inline in D3D init: the exact CreateDevice call sequence

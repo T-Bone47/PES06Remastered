@@ -1,0 +1,158 @@
+=== program: pes6.exe ===
+
+################ 0x004051D0  called right before mode selection / CreateDevice ################
+// containing function: FUN_004051d0 @ 004051d0
+// signature: undefined FUN_004051d0(void)
+// exact entry: true
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+undefined4 FUN_004051d0(void)
+
+{
+  undefined4 uVar1;
+  int iVar2;
+  undefined4 uVar3;
+  
+  iVar2 = (**(code **)(*DAT_00f83eb8 + 0x34))(DAT_00f83eb8,DAT_00f83fc4,DAT_00f83fc8,&DAT_00f83ef0);
+  while( true ) {
+    if (iVar2 < 0) {
+      return 1;
+    }
+    FUN_00405030();
+    if ((_DAT_00f83efc & 0x80000) == 0) {
+      DAT_00f83ea8 = 0;
+    }
+    else {
+      FUN_00404b30();
+    }
+    thunk_FUN_044cc400((int)DAT_00f83eaa);
+    thunk_FUN_00403a55();
+    FUN_00404db0();
+    if (DAT_00f83eab == '\0') {
+      DAT_00f83ead = 1;
+    }
+    RedrawWindow(DAT_00f83fd0,(RECT *)0x0,(HRGN)0x0,0x401);
+    DAT_00f83ea7 = DAT_00f83eab;
+    FUN_004033c0(DAT_00f83eab == '\0');
+    uVar1 = DAT_00f83ec4;
+    uVar3 = thunk_FUN_044d3fa0(DAT_00f83ec4);
+    iVar2 = (**(code **)(*DAT_00f83eb8 + 0x24))
+                      (DAT_00f83eb8,DAT_00f83fc4,DAT_00f83fc8,uVar3,uVar1,DAT_00f83ea7 == '\0');
+    if (-1 < iVar2) break;
+    if (DAT_00f83fc8 != 1) {
+      return 1;
+    }
+    DAT_00f83fc8 = 2;
+    iVar2 = (**(code **)(*DAT_00f83eb8 + 0x34))(DAT_00f83eb8,DAT_00f83fc4,2,&DAT_00f83ef0);
+  }
+  return 0;
+}
+
+
+
+################ 0x004059A0  queried before the device calls ################
+// containing function: FUN_004059a0 @ 004059a0
+// signature: undefined FUN_004059a0(void)
+// exact entry: true
+
+undefined4 FUN_004059a0(void)
+
+{
+  return DAT_00f83e68;
+}
+
+
+
+################ 0x00404B30  returns the value stored in DAT_00f83ec4 ################
+// containing function: FUN_00404b30 @ 00404b30
+// signature: undefined FUN_00404b30(void)
+// exact entry: true
+
+int FUN_00404b30(void)
+
+{
+  int *piVar1;
+  undefined4 uVar2;
+  int iVar3;
+  int *piVar4;
+  int iVar5;
+  uint uVar6;
+  uint uVar7;
+  int iVar8;
+  int local_10 [4];
+  
+  DAT_00f83ea8 = '\0';
+  if (DAT_00f83ea7 == '\0') {
+    iVar3 = (**(code **)(*DAT_00f83eb8 + 0x20))(DAT_00f83eb8,DAT_00f83fc4,local_10);
+    if (iVar3 < 0) {
+      return 0x16;
+    }
+    DAT_00f83e94 = local_10[3];
+  }
+  uVar2 = DAT_00f83e94;
+  local_10[0] = thunk_FUN_044d10a0(DAT_00f83e94,0);
+  local_10[1] = uVar2;
+  iVar8 = 0;
+  iVar3 = DAT_00f83e98;
+  do {
+    piVar1 = *(int **)(iVar3 + 8);
+    piVar4 = *(int **)(iVar3 + 4);
+    if (piVar4 == piVar1) {
+LAB_00404bf3:
+      local_10[iVar8] = 0;
+    }
+    else {
+      do {
+        if (*piVar4 == local_10[iVar8]) break;
+        piVar4 = piVar4 + 1;
+      } while (piVar4 != piVar1);
+      if ((piVar4 == piVar1) ||
+         (iVar5 = (**(code **)(*DAT_00f83eb8 + 0x24))
+                            (DAT_00f83eb8,DAT_00f83fc4,DAT_00f83fc8,uVar2,local_10[iVar8],1),
+         iVar3 = DAT_00f83e98, iVar5 < 0)) goto LAB_00404bf3;
+      DAT_00f83ea8 = '\x01';
+    }
+    iVar8 = iVar8 + 1;
+    if (1 < iVar8) {
+      if (DAT_00f83ea8 != '\0') {
+        iVar8 = *(int *)(iVar3 + 4);
+        for (uVar7 = 0; (iVar8 != 0 && (uVar6 = *(int *)(iVar3 + 8) - iVar8 >> 2, uVar7 < uVar6));
+            uVar7 = uVar7 + 1) {
+          iVar5 = 0;
+          do {
+            if (uVar6 <= uVar7) {
+              iVar3 = FUN_00404200();
+              return iVar3;
+            }
+            if (*(int *)(iVar8 + uVar7 * 4) == local_10[iVar5]) {
+              return local_10[iVar5];
+            }
+            iVar5 = iVar5 + 1;
+          } while (iVar5 < 2);
+        }
+      }
+      return 0x16;
+    }
+  } while( true );
+}
+
+
+
+################ 0x00403CE0  called right after a successful CreateDevice ################
+// containing function: thunk_FUN_044d0e50 @ 00403ce0
+// signature: undefined thunk_FUN_044d0e50(void)
+// exact entry: true
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void thunk_FUN_044d0e50(void)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x00403ce0. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*_DAT_04468e0c)();
+  return;
+}
+
+

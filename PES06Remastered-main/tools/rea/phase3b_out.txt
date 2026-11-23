@@ -1,0 +1,4 @@
+=== program: pes6.exe ===
+
+################ 0x0040C6F0  the texture-format handler ("can't support texture format: %%.8x") ################
+(no function contains this address)

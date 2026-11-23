@@ -1,0 +1,89 @@
+
+################ 0x00410C20  function that calls CreateWindowExA ################
+// function FUN_00410c20 @ 00410c20  size=162
+
+// ---- DECOMPILATION ----
+
+void FUN_00410c20(HINSTANCE param_1,int param_2,int param_3)
+
+{
+  undefined4 in_EAX;
+  undefined *dwStyle;
+  tagRECT local_10;
+  
+  dwStyle = &DAT_02cb0000;
+  switch(in_EAX) {
+  case 2:
+  case 6:
+  case 7:
+    dwStyle = (undefined *)0x32cb0000;
+    break;
+  case 3:
+    dwStyle = (undefined *)0x13cb0000;
+    break;
+  case 4:
+  case 5:
+  case 8:
+  case 9:
+    dwStyle = (undefined *)0x12cb0000;
+  }
+  local_10.top = 0;
+  local_10.left = 0;
+  local_10.right = param_2;
+  local_10.bottom = param_3;
+  AdjustWindowRectEx(&local_10,(DWORD)dwStyle,0,0x300);
+  CreateWindowExA(0x300,"{20418978-752D-491c-AF1E-A2EDE086E000}","Pro Evolution Soccer 6",
+                  (DWORD)dwStyle,-0x80000000,-0x80000000,local_10.right - local_10.left,
+                  local_10.bottom - local_10.top,(HWND)0x0,(HMENU)0x0,param_1,(LPVOID)0x0);
+  return;
+}
+
+
+
+// ---- LISTING ----
+00410c20  83ec10               SUB ESP,0x10
+00410c23  83c0fe               ADD EAX,-0x2
+00410c26  83f807               CMP EAX,0x7
+00410c29  56                   PUSH ESI
+00410c2a  be0000cb02           MOV ESI,0x2cb0000
+00410c2f  771a                 JA 0x00410c4b
+00410c31  ff2485c40c4100       JMP dword ptr [EAX*0x4 + 0x410cc4]
+00410c38  be0000cb12           MOV ESI,0x12cb0000
+00410c3d  eb0c                 JMP 0x00410c4b
+00410c3f  be0000cb13           MOV ESI,0x13cb0000
+00410c44  eb05                 JMP 0x00410c4b
+00410c46  be0000cb32           MOV ESI,0x32cb0000
+00410c4b  8b44241c             MOV EAX,dword ptr [ESP + 0x1c]
+00410c4f  8b4c2420             MOV ECX,dword ptr [ESP + 0x20]
+00410c53  6800030000           PUSH 0x300
+00410c58  6a00                 PUSH 0x0
+00410c5a  56                   PUSH ESI
+00410c5b  8d542410             LEA EDX,[ESP + 0x10]
+00410c5f  52                   PUSH EDX
+00410c60  c744241800000000     MOV dword ptr [ESP + 0x18],0x0
+00410c68  c744241400000000     MOV dword ptr [ESP + 0x14],0x0
+00410c70  8944241c             MOV dword ptr [ESP + 0x1c],EAX
+00410c74  894c2420             MOV dword ptr [ESP + 0x20],ECX
+00410c78  ff15b0d2b700         CALL dword ptr [0x00b7d2b0]
+00410c7e  8b442418             MOV EAX,dword ptr [ESP + 0x18]
+00410c82  8b4c2410             MOV ECX,dword ptr [ESP + 0x10]
+00410c86  8b54240c             MOV EDX,dword ptr [ESP + 0xc]
+00410c8a  6a00                 PUSH 0x0
+00410c8c  50                   PUSH EAX
+00410c8d  8b442410             MOV EAX,dword ptr [ESP + 0x10]
+00410c91  6a00                 PUSH 0x0
+00410c93  6a00                 PUSH 0x0
+00410c95  2bc8                 SUB ECX,EAX
+00410c97  51                   PUSH ECX
+00410c98  2b542418             SUB EDX,dword ptr [ESP + 0x18]
+00410c9c  52                   PUSH EDX
+00410c9d  6800000080           PUSH 0x80000000
+00410ca2  6800000080           PUSH 0x80000000
+00410ca7  56                   PUSH ESI
+00410ca8  68d0dcb700           PUSH 0xb7dcd0
+00410cad  68a8dcb700           PUSH 0xb7dca8
+00410cb2  6800030000           PUSH 0x300
+00410cb7  ff1598d2b700         CALL dword ptr [0x00b7d298]
+00410cbd  5e                   POP ESI
+00410cbe  83c410               ADD ESP,0x10
+00410cc1  c3                   RET

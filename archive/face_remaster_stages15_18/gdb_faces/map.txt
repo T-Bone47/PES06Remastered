@@ -1,0 +1,4 @@
+# PES 6 Legacy Remaster - Face Server Map
+# Format: <player_id>,"<relative_path_to_bin>"
+# All custom face overrides are disabled.
+# Reverted to 100% original vanilla game faces from 0_text.afs.

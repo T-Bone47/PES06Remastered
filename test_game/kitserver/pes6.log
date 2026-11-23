@@ -1,0 +1,223 @@
+{KLOAD} Log started.
+{KLOAD} Registering module KLOAD ("Module Loader 6.8.2")
+{KLOAD} ReadConfig: debug = (1)
+{KLOAD} ReadConfig: gdbDir = ".\"
+{KLOAD} ReadConfig: ReservedMemory = (500000000)
+{KLOAD} ReadConfig: font-size.factor = (1.500)
+{KLOAD} ReadConfig: display.fps = (0)
+{KLOAD} ReadConfig: DLL.num = (15)
+{KLOAD} ReadConfig: new dll (id=0) is named "kitserver\zlib1.dll"
+{KLOAD} ReadConfig: new dll (id=1) is named "kitserver\libpng13.dll"
+{KLOAD} ReadConfig: new dll (id=2) is named "kitserver\afs2fs.dll"
+{KLOAD} ReadConfig: new dll (id=3) is named "kitserver\kserv.dll"
+{KLOAD} ReadConfig: new dll (id=4) is named "kitserver\bserv.dll"
+{KLOAD} ReadConfig: new dll (id=5) is named "kitserver\fserv.dll"
+{KLOAD} ReadConfig: new dll (id=6) is named "kitserver\lodmixer.dll"
+{KLOAD} ReadConfig: new dll (id=7) is named "kitserver\stadium.dll"
+{KLOAD} ReadConfig: new dll (id=8) is named "kitserver\bootserv.dll"
+{KLOAD} ReadConfig: new dll (id=9) is named "kitserver\clock.dll"
+{KLOAD} ReadConfig: new dll (id=10) is named "kitserver\psc.dll"
+{KLOAD} ReadConfig: new dll (id=11) is named "kitserver\speeder.dll"
+{KLOAD} ReadConfig: new dll (id=12) is named "kitserver\gloves.dll"
+{KLOAD} ReadConfig: new dll (id=13) is named "kitserver\skins.dll"
+{KLOAD} ReadConfig: new dll (id=14) is named "remaster.asi"
+{KLOAD} ReadConfig: dx.force-SW-TnL = (0)
+{KLOAD} ReadConfig: dx.emulate-HW-TnL = (1)
+{KLOAD} 0_text -> dat\0_text.afs
+{KLOAD} Reading key bindings from {C:\Users\dream\Downloads\PES06Remastered-main\test_game\kitserver\keybind.dat}
+{KLOAD} Game version: PES6 PC
+{KLOAD} Loading module "kitserver\zlib1.dll" ...
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\libpng13.dll" ...
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\afs2fs.dll" ...
+{AFS2FS} Attaching dll...
+{KLOAD} Registering module AFS2FS ("Afs2fs Module 6.8.0")
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\kserv.dll" ...
+{KLOAD} Registering module KSERV ("KitServer 6.8.0")
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\bserv.dll" ...
+{BSERV} Attaching dll...
+{KLOAD} Registering module BSERV ("Ballserver 6.8.0")
+{BSERV} teamId = 64
+{BSERV} ballname = { 1
+}
+{BSERV} teamId = 69
+{BSERV} ballname = { 1
+}
+{BSERV} teamId = 72
+{BSERV} ballname = { 1
+}
+{BSERV} teamId = 74
+{BSERV} ballname = { 1
+}
+{BSERV} teamId = 143
+{BSERV} ballname = { 1
+}
+{BSERV} teamId = 153
+{BSERV} ballname = { 1
+}
+{BSERV} teamId = 111
+{BSERV} ballname = { 1
+}
+{BSERV} teamId = 115
+{BSERV} ballname = { 1
+}
+{BSERV} ReadConfig: preview = (1)
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\fserv.dll" ...
+{FSERV} Attaching dll...
+{KLOAD} Registering module FSERV ("Faceserver 6.8.1")
+{FSERV} ReadConfig: dump.textures = (0)
+{FSERV} ReadConfig: npot.textures = (0)
+{FSERV} ReadConfig: hd.face.max.width = (1024)
+{FSERV} ReadConfig: hd.face.max.height = (2048)
+{FSERV} ReadConfig: hd.hair.max.width = (2048)
+{FSERV} ReadConfig: hd.hair.max.height = (1024)
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\lodmixer.dll" ...
+{LODMIXER} Attaching dll...
+{KLOAD} Registering module LODMIXER ("LODmixer 6.8.2")
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\stadium.dll" ...
+{STADIUM} Attaching dll...
+{KLOAD} Registering module STADIUM ("Stadium Server 6.8.0")
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\bootserv.dll" ...
+{BOOTSERV} Attaching dll...
+{KLOAD} Registering module BOOTSERV ("Bootserver 6.8.1")
+{BOOTSERV} readConfig: g_config._randomBootsEnabled = 1
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\clock.dll" ...
+{CLOCK} Attaching dll...
+{CLOCK} Your game version is currently not supported!
+{CLOCK} Detaching dll...
+{CLOCK} Detaching done.
+{KLOAD} ... was NOT successful!
+{KLOAD} Loading module "kitserver\psc.dll" ...
+{PSC} Attaching dll...
+{KLOAD} Registering module PSC ("PSC 6.8.0")
+{PSC} No exe file was set!
+{PSC} Detaching dll...
+{PSC} Detaching done.
+{KLOAD} ... was NOT successful!
+{KLOAD} Loading module "kitserver\speeder.dll" ...
+{KLOAD} Registering module SPEEDER ("Speeder Module 6.8.0")
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\gloves.dll" ...
+{GLOVES} Attaching dll...
+{KLOAD} Registering module GLOVES ("Gloveserver 6.8.2")
+{KLOAD} ... was successful!
+{KLOAD} Loading module "kitserver\skins.dll" ...
+{SKINS} Attaching dll...
+{KLOAD} Registering module SKINS ("Skinserver 6.8.2")
+{KLOAD} ... was successful!
+{KLOAD} Loading module "remaster.asi" ...
+{KLOAD} ... was successful!
+{KLOAD} JMP-hooking Direct3DCreate8...
+{KLOAD} JMP-hook planted.
+{KLOAD} NewDirect3DCreate8 called.
+{KLOAD} calling InitGetNumPages()...
+{KLOAD} calling InitAfsReplace()...
+{KLOAD} RegisterGetNumPagesCallback(72ba9820)
+{KLOAD} NewDirect3DCreate8: calling function 73b61060
+{AFS2FS} initializing AFS2FS module...
+{AFS2FS} ReadConfig: debug = (0)
+{KLOAD} RegisterAfsReplaceCallback(73b611e0)
+{KLOAD} NewDirect3DCreate8: calling function 72b0ff80
+{KLOAD} RegisterUniDecodeCallback(72aff9f0)
+{KLOAD} RegisterAfsReplaceCallback(72aff960)
+{KLOAD} RegisterUnpackCallback(72affa80)
+{KLOAD} NewDirect3DCreate8: calling function 72a7f980
+{BSERV} InitBserv called.
+{KLOAD} RegisterAfsReplaceCallback(72a80720)
+{KLOAD} RegisterUnpackCallback(72a808a0)
+{KLOAD} NewDirect3DCreate8: calling function 729fe3b0
+{FSERV} InitFserv
+{KLOAD} RegisterAfsReplaceCallback(729ff740)
+{FSERV} Number of GDB faces is 0
+{FSERV} Number of GDB hair is 0
+{FSERV} hooking various functions
+{FSERV} C_GETHAIRTRANSP HOOKED at C_GETHAIRTRANSP_CS
+{FSERV} C_EDITCOPYPLAYERDATA HOOKED at C_EDITCOPYPLAYERDATA_CS
+{FSERV} hooking done
+{KLOAD} NewDirect3DCreate8: calling function 729a1180
+{LODMIXER} InitLodMixer called.
+{LODMIXER} Crowd unblock activated.
+{LODMIXER} Lod levels set to 1,1,1,1,1.
+{KLOAD} NewDirect3DCreate8: calling function 7294df00
+{KLOAD} RegisterAfsReplaceCallback(7294f180)
+{STADIUM} stadAfsReplace hooked
+{STADIUM} found stadium: {Anfield}
+{STADIUM} found stadium: {Camp Nou}
+{STADIUM} found stadium: {Highbury Stadium}
+{STADIUM} found stadium: {Old Trafford}
+{STADIUM} found stadium: {San Siro}
+{STADIUM} found stadium: {Santiago Bernabeu}
+{STADIUM} found stadium: {Stamford Bridge}
+{STADIUM} teamId = 64
+{STADIUM} foldername = {Highbury Stadium}
+{STADIUM} teamId = 69
+{STADIUM} foldername = {Stamford Bridge}
+{STADIUM} teamId = 72
+{STADIUM} foldername = {Anfield}
+{STADIUM} teamId = 74
+{STADIUM} foldername = {Old Trafford}
+{STADIUM} teamId = 143
+{STADIUM} foldername = {Camp Nou}
+{STADIUM} teamId = 153
+{STADIUM} foldername = {Santiago Bernabeu}
+{STADIUM} teamId = 115
+{STADIUM} foldername = {San Siro}
+{STADIUM} teamId = 111
+{STADIUM} foldername = {San Siro}
+{KLOAD} NewDirect3DCreate8: calling function 72881010
+{SPEEDER} count.factor = 1.00
+{SPEEDER} module initialized.
+{KLOAD} CreateDevice hooked.
+{KLOAD} GetDeviceCaps hooked.
+{KLOAD} code[C_BEGINUNISELECT] HOOKED at code[C_BEGINUNISELECT_CS]
+{KLOAD} code[C_ENDUNISELECT] HOOKED at code[C_ENDUNISELECT_CS]
+{KLOAD} code[C_LODMIXER_HOOK_ORG] HOOKED at code[C_LODMIXER_HOOK_CS]
+{KLOAD} Jump to ProcessPlayerData HOOKED at code[C_PROCESSPLAYERDATA_JMP]
+{KLOAD} code[C_PES_GETTEXTURE] HOOKED at code[C_PES_GETTEXTURE_CS1]
+{KLOAD} BeginRenderPlayer HOOKED at code[C_BEGIN_RENDERPLAYER_CS]
+{KLOAD} BeginRenderPlayer Short-Jump-Hack installed.
+{KLOAD} ReadFile HOOKED at code[C_READFILE_CS]
+{KLOAD} AfterFileFromAFS HOOKED at code[C_AFTERFILEFROMAFS_CS]
+{KLOAD} Installed keyboard hook: g_hKeyboardHook = 16912529
+{KLOAD} Increased reserved memory to 500000000 bytes
+{KLOAD} NewGetDeviceCaps called.
+{KLOAD} device reported HW TnL: 0
+{KLOAD} emulating HW TnL.
+{KLOAD} NewGetDeviceCaps called.
+{KLOAD} device reported HW TnL: 0
+{KLOAD} emulating HW TnL.
+{SKINS} Detaching dll...
+{GLOVES} Detaching dll...
+{BOOTSERV} Detaching dll...
+{STADIUM} Detaching dll...
+{STADIUM} GetString unhooked.
+{STADIUM} GetString2 unhooked.
+{STADIUM} WriteBuilt unhooked.
+{STADIUM} WriteCapacity unhooked.
+{STADIUM} SetLCM unhooked.
+{STADIUM} ReadLCM unhooked.
+{LODMIXER} Detaching dll...
+{LODMIXER} Detaching done.
+{FSERV} Detaching dll...
+{FSERV} C_GETHAIRTRANSP UNHOOKED at C_GETHAIRTRANSP_CS
+{FSERV} C_EDITCOPYPLAYERDATA UNHOOKED at C_EDITCOPYPLAYERDATA_CS
+{FSERV} Detaching done.
+{BSERV} Detaching dll...
+{BSERV} Detaching done.
+{KLOAD} ReadFile UNHOOKED
+{KLOAD} GetNumPagesForFileInAFS command unhooked
+{KLOAD} GetNumPagesForFileInAFS2 command unhooked
+{KLOAD} code[C_BEGINUNISELECT] UNHOOKED at code[C_BEGINUNISELECT_CS]
+{KLOAD} code[C_ENDUNISELECT] UNHOOKED at code[C_ENDUNISELECT_CS]
+{KLOAD} Jump to ProcessPlayerData UNHOOKED
+{KLOAD} Keyboard hook uninstalled.
+{KLOAD} Fonts destroyed
+{KLOAD} Closing log.

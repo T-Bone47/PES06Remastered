@@ -1,0 +1,83 @@
+{
+  "title": "PES 6 2006-era player reference candidate catalogue",
+  "scope": "2005-2007 photographs; target the 2006-era appearance and verify exact season visually",
+  "note": "Seeded Wikimedia Commons file pages. Each file's license is checked live before download. A candidate is NOT a validated frontal facial reference. User/artist must manually assess angles, likeness, image quality and actual 2006 roster mapping.",
+  "teams": [
+    {"name":"Arsenal", "players": [
+      {"id":"thierry_henry","name":"Thierry Henry", "candidates":[
+        {"file":"Thierry Henry portrait.jpg","year":2006,"quality":"Low resolution crop (189x193); useful for era, not direct texture transfer","view":"portrait/action crop"},
+        {"file":"Thierry Henry Charlton.jpg","year":2006,"quality":"Action photo; inspect profile angle","view":"action"},
+        {"file":"Thierry Henry.jpg","year":2006,"quality":"2006 Arsenal photo, very narrow; backup reference","view":"action"}
+      ]},
+      {"id":"cesc_fabregas","name":"Cesc Fàbregas", "candidates":[
+        {"file":"Cesc Fabregas.jpg","year":2006,"view":"action portrait","quality":"2006 era; verify face visibility"},
+        {"file":"Fabregas shooting.jpg","year":2006,"view":"action","quality":"Supplemental"}
+      ]},
+      {"id":"gilberto_silva","name":"Gilberto Silva", "candidates":[
+        {"file":"Gilberto Silva.png","year":2006,"view":"action","quality":"March 2006; low resolution"},
+        {"file":"Gilberto Silva NorthLondon.jpg","year":2006,"view":"action","quality":"2006 alternative"}
+      ]},
+      {"id":"fredrik_ljungberg","name":"Fredrik Ljungberg", "candidates":[
+        {"file":"Fredrik Ljungberg 060602.jpg","year":2006,"view":"action","quality":"Sweden June 2006; inspect face visibility"},
+        {"file":"Fredrik Ljungberg 2006.jpg","year":2006,"view":"team crop","quality":"2006 fallback"}
+      ]},
+      {"id":"robin_van_persie","name":"Robin van Persie", "candidates":[
+        {"file":"Robin van Persie cropped.jpg","year":2006,"view":"cropped portrait","quality":"2006 training; moderate resolution"},
+        {"file":"RVP Holland training.jpg","year":2006,"view":"training","quality":"2006 training"}
+      ]}
+    ]},
+    {"name":"Barcelona", "players": [
+      {"id":"ronaldinho","name":"Ronaldinho", "candidates":[
+        {"file":"Ronaldinho061115.jpg","year":2006,"view":"action","quality":"Nov 2006, 1200x1600; first priority"},
+        {"file":"Ronaldinho-7-5-2006.jpg","year":2006,"view":"celebration","quality":"May 2006 season title, 693x866"},
+        {"file":"Ronaldinho061115-01.jpg","year":2006,"view":"action","quality":"Nov 2006 alternative"}
+      ]},
+      {"id":"samuel_etoo","name":"Samuel Eto'o", "candidates":[
+        {"file":"Samuel-Etoo-7-5-2006.jpg","year":2006,"view":"celebration","quality":"May 2006, 378x424"},
+        {"file":"Samuel etoo.JPG","year":2006,"view":"action","quality":"Low resolution"}
+      ]},
+      {"id":"deco","name":"Deco", "candidates":[
+        {"file":"Deco 21dec2006.jpg","year":2006,"view":"action","quality":"Dec 2006 500x675"},
+        {"file":"Decobarca.jpg","year":2005,"view":"action","quality":"2005-era alternative; inspect crop"}
+      ]},
+      {"id":"lionel_messi","name":"Lionel Messi", "candidates":[
+        {"file":"Lionel Messi Barca training.jpg","year":2006,"view":"training","quality":"Aug 2006 360x272; low detail"},
+        {"file":"Lionel Messi 31mar2007.jpg","year":2007,"view":"action","quality":"March 2007 close era; inspect quality"},
+        {"file":"Barcelona FC v NY Red Bulls.jpg","year":2006,"view":"match","quality":"Aug 2006 wide shot, unlikely facial-detail quality"}
+      ]}
+    ]},
+    {"name":"Chelsea", "players": [
+      {"id":"didier_drogba","name":"Didier Drogba", "candidates":[
+        {"file":"Didier Drogba complains.jpg","year":2006,"view":"action","quality":"2006 Chelsea; facial expression"},
+        {"file":"Drogba chelsea.jpg","year":2007,"view":"action","quality":"Feb 2007, 627x806"}
+      ]},
+      {"id":"frank_lampard","name":"Frank Lampard", "candidates":[
+        {"file":"Frank Lampard cropped.jpg","year":2006,"view":"cropped action","quality":"March 2006, limited resolution"},
+        {"file":"Frank lampard.jpg","year":2007,"view":"action","quality":"Feb 2007 alternative"}
+      ]},
+      {"id":"john_terry","name":"John Terry", "candidates":[
+        {"file":"John Terry original.jpg","year":2006,"view":"celebration","quality":"2006 team bus photo; may contain others"},
+        {"file":"John Terry during a match vs Everton at Stamford Bridge in 2006.jpg","year":2006,"view":"action","quality":"2006 game, 327x422"},
+        {"file":"John Terry.jpg","year":2006,"view":"action","quality":"2006 alternative"}
+      ]}
+    ]},
+    {"name":"Real_Madrid", "players": [
+      {"id":"zinedine_zidane","name":"Zinedine Zidane", "candidates":[
+        {"file":"Zinedine zidane wcf 2006.jpg","year":2006,"view":"2006 World Cup","quality":"High-res 3456x2304; exact crop/angle manually inspect"},
+        {"file":"Zinedine zidane wcf 2006-edit.jpg","year":2006,"view":"cropped","quality":"Edited derivative of same photo; not an independent angle"}
+      ]},
+      {"id":"ronaldo_nazario","name":"Ronaldo Nazário", "candidates":[
+        {"file":"Ronaldo Real Madrid.jpg","year":2005,"view":"match","quality":"2005 Real Madrid era, probably wide; do not confuse with Cristiano Ronaldo"},
+        {"file":"Ronaldo.jpeg","year":2005,"view":"portrait/action","quality":"2005, inspect actual face and license before use"}
+      ]},
+      {"id":"david_beckham","name":"David Beckham", "candidates":[
+        {"file":"Beckham warmingup.jpg","year":2006,"view":"warm-up","quality":"Aug 2006 Real Madrid"},
+        {"file":"David Beckham in Madrid.jpg","year":2006,"view":"action","quality":"2006-era Madrid; verify exact date"},
+        {"file":"David Beckham.jpg","year":2006,"view":"action","quality":"June 2006 alternative; source page includes extra permission language; review"}
+      ]},
+      {"id":"roberto_carlos","name":"Roberto Carlos", "candidates":[
+        {"file":"Roberto Carlos.JPG","year":2006,"view":"training","quality":"Aug 2006 Brazilian national team, 893x1361"}
+      ]}
+    ]}
+  ]
+}

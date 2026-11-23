@@ -1,0 +1,2 @@
+0x00410E50  contains "AFS File not found."
+0x0088F150  AFS path parsing (strrchr) + adxt_StartAfs errors

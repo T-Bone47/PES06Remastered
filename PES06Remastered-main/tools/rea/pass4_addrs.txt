@@ -1,0 +1,7 @@
+0x00F83FD8  resolution width (set from ECX)
+0x00F83FDC  resolution height (set from EAX)
+0x00F83FE0  resolution width copy
+0x00F83FE4  resolution height copy
+0x00F83EF0  struct passed to the D3D vtable call
+0x00F83FE8  60 (refresh rate?)
+0x00F83EA8  mode flags

@@ -1,0 +1,38 @@
+Windows Registry Editor Version 5.00
+
+; PES 6 install registration for 64-bit Windows.
+; 32-bit game reads HKLM\SOFTWARE\KONAMIPES6\PES6 -> Wow6432Node\KONAMIPES6\PES6
+; Values taken from the distribution's own "SETUP 32 bit.REG"; only installdir
+; and installfrom are corrected to this machine's actual paths.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KONAMIPES6]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KONAMIPES6\PES6]
+"installdir"="C:\\Users\\olive\\Downloads\\PES-6\\PES-6-DownloadComputerGames.net\\"
+"lang_e"=dword:00000001
+"lang_f"=dword:00000000
+"lang_g"=dword:00000000
+"lang_i"=dword:00000000
+"lang_s"=dword:00000000
+"lang_p"=dword:00000000
+"installfrom"="C:"
+"code"="ESWV4EFNTPK63XVTATEF"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\KONAMIPES6\PES6\1.0]
+
+; Also write the non-wow6432 view, mirroring the distribution's 32-bit REG,
+; in case any 64-bit helper or launcher reads it.
+[HKEY_LOCAL_MACHINE\SOFTWARE\KONAMIPES6]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\KONAMIPES6\PES6]
+"installdir"="C:\\Users\\olive\\Downloads\\PES-6\\PES-6-DownloadComputerGames.net\\"
+"lang_e"=dword:00000001
+"lang_f"=dword:00000000
+"lang_g"=dword:00000000
+"lang_i"=dword:00000000
+"lang_s"=dword:00000000
+"lang_p"=dword:00000000
+"installfrom"="C:"
+"code"="ESWV4EFNTPK63XVTATEF"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\KONAMIPES6\PES6\1.0]

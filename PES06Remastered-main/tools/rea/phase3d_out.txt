@@ -1,0 +1,110 @@
+=== program: pes6.exe ===
+
+################ 0x0040C270  texture setup function (contains the format-table walk) ################
+// containing function: FUN_0040c270 @ 0040c270
+// signature: undefined FUN_0040c270(void)
+// exact entry: true
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0040c270(void)
+
+{
+  int iVar1;
+  undefined1 uVar2;
+  int in_ECX;
+  uint uVar3;
+  undefined4 *unaff_FS_OFFSET;
+  undefined4 local_c;
+  undefined1 *puStack_8;
+  undefined4 uStack_4;
+  
+  uStack_4 = 0xffffffff;
+  puStack_8 = &LAB_00b7bb66;
+  local_c = *unaff_FS_OFFSET;
+  *unaff_FS_OFFSET = &local_c;
+  iVar1 = *(int *)(in_ECX + 0x18);
+  if (iVar1 == 0) {
+    *unaff_FS_OFFSET = local_c;
+    return;
+  }
+  uVar3 = (uint)*(byte *)(iVar1 + 0x19);
+  if (*(char *)(iVar1 + 0x3c) == '\0') {
+    if (0x1b < uVar3) goto switchD_0040c2f1_caseD_2;
+  }
+  else {
+    switch(*(char *)(iVar1 + 0x3c)) {
+    case '\x01':
+      uVar3 = 0x15;
+      break;
+    default:
+      goto switchD_0040c2f1_caseD_2;
+    case '\x03':
+      uVar3 = 0x16;
+      break;
+    case '\x05':
+      uVar3 = 0x17;
+      break;
+    case '\x06':
+      uVar3 = 0x18;
+      break;
+    case '\b':
+      uVar3 = 0x19;
+      break;
+    case '\t':
+      uVar3 = 0x1a;
+      break;
+    case '\n':
+      uVar3 = 0x1b;
+    }
+  }
+                    /* WARNING: Could not find normalized switch variable to match jumptable */
+  switch((&switchD_0040c35c::switchdataD_0040cc10)[uVar3]) {
+  case 0:
+    uVar2 = thunk_FUN_044cc670();
+    *(undefined1 *)(in_ECX + 0x14) = uVar2;
+    break;
+  default:
+switchD_0040c2f1_caseD_2:
+                    /* WARNING: Could not recover jumptable at 0x0040cb9c. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*_DAT_04465c64)();
+    return;
+  case 2:
+    goto LAB_0040c4bc;
+  case 0x13:
+    uVar2 = thunk_FUN_044cc670();
+    *(undefined1 *)(in_ECX + 0x14) = uVar2;
+    break;
+  case 0x14:
+    uVar2 = thunk_FUN_044cc670();
+    *(undefined1 *)(in_ECX + 0x14) = uVar2;
+    break;
+  case 0x15:
+    goto LAB_0040c4bc;
+  case 0x16:
+    *(byte *)(in_ECX + 0x14) = *(byte *)(iVar1 + 0x3d) >> 2 & 1;
+    break;
+  case 0x17:
+    *(byte *)(in_ECX + 0x14) = *(byte *)(iVar1 + 0x3d) >> 2 & 1;
+    break;
+  case 0x18:
+    uVar2 = thunk_FUN_044cece0();
+    *(undefined1 *)(in_ECX + 0x14) = uVar2;
+    break;
+  case 0x19:
+    goto LAB_0040c4bc;
+  case 0x1a:
+    *(undefined1 *)(in_ECX + 0x14) = 1;
+    break;
+  case 0x1b:
+LAB_0040c4bc:
+    *(undefined1 *)(in_ECX + 0x14) = 0;
+  }
+                    /* WARNING: Could not recover jumptable at 0x0040c4d0. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*_DAT_04465654)();
+  return;
+}
+
+

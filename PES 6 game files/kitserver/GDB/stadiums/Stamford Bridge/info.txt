@@ -1,0 +1,4 @@
+# Stadium info file
+built = 1877
+capacity = 41837
+city = London

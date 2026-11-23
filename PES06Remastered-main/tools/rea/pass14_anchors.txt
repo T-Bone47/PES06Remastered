@@ -1,0 +1,2 @@
+0x00415310  AFS file existence check
+0x00415460  CD/DVD-ROM check

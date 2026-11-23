@@ -1,0 +1,9 @@
+@echo off
+call "C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Auxiliary\Build\vcvars32.bat" >nul 2>&1
+cd /d "c:\Users\dream\Downloads\PES06Remastered-main\PES06Remastered-main\remaster"
+cl /nologo /W3 /O2 /MT /EHsc /LD /std:c++17 /D_CRT_SECURE_NO_WARNINGS /DREMASTER_NO_UPSTREAM /Fo:c:\Users\dream\Downloads\PES06Remastered-main\PES06Remastered-main\remaster\build\ /Fd:c:\Users\dream\Downloads\PES06Remastered-main\PES06Remastered-main\remaster\build\ /I third_party /I third_party/MinHook/include /I src remaster.cpp core/core.cpp graphics/graphics.cpp graphics/d3d8.cpp graphics/hires.cpp telemetry/telemetry.cpp io/fileio.cpp assets/assets.cpp third_party/MinHook/src/hook.c third_party/MinHook/src/trampoline.c third_party/MinHook/src/buffer.c third_party/MinHook/src/hde/hde32.c src\mod_core.cpp /link /OUT:build\remaster_sub.asi user32.lib ole32.lib windowscodecs.lib gdi32.lib shell32.lib >build\compile.log 2>&1
+if errorlevel 1 (
+    echo COMPILE_FAILED
+    exit /b 1
+)
+"c:\Users\dream\Downloads\PES06Remastered-main\PES06Remastered-main\tools\rea\dx8\loadtest.exe" build\remaster_sub.asi

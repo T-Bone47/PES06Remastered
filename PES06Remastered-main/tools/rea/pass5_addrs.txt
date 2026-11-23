@@ -1,0 +1,2 @@
+0x00405300  consumer of the resolution width global
+0x0044F7D6  indirect consumer of the resolution globals

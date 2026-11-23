@@ -1,0 +1,51 @@
+=== program: pes6.exe ===
+
+################ 0x008CD340  the PES6 asset decompressor ################
+// containing function: FUN_008cd340 @ 008cd340
+// signature: undefined FUN_008cd340(void)
+// exact entry: true
+
+int FUN_008cd340(undefined4 param_1,undefined4 param_2,int param_3)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined4 *unaff_ESI;
+  undefined1 local_38 [4];
+  undefined4 local_34;
+  undefined4 local_2c;
+  undefined4 local_28;
+  undefined4 local_24;
+  undefined1 *local_18;
+  undefined1 *local_14;
+  
+  local_34 = param_2;
+  if (param_3 == 0) {
+    local_28 = *unaff_ESI;
+    local_2c = param_1;
+    if (unaff_ESI[1] == 0) {
+      local_18 = &LAB_008cd320;
+      local_14 = &LAB_008c4ee0;
+      iVar1 = FUN_00b43610(local_38,"1.1.4",0x38);
+      if (iVar1 == 0) {
+        iVar2 = FUN_00b43630(local_38,4);
+        if (iVar2 == 1) {
+          *unaff_ESI = local_24;
+          unaff_ESI[1] = 0;
+          iVar1 = FUN_00b434c0(local_38);
+        }
+        else {
+          FUN_00b434c0(local_38);
+          iVar1 = -5;
+          if (iVar2 != 0) {
+            return iVar2;
+          }
+        }
+      }
+      return iVar1;
+    }
+  }
+  return -5;
+}
+
+

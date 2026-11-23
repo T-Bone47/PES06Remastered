@@ -1,0 +1,41 @@
+[INFO] remaster.asi attaching (pid 31208)
+[INFO] config loaded from C:\Users\dream\Downloads\PES06Remastered-main\test_game\remaster.ini
+[INFO] manifest loaded from C:\Users\dream\Downloads\PES06Remastered-main\test_game\remaster_manifest.txt
+[INFO] gate: 119 addresses checked, 119 matched, 0 mismatched, 0 unmapped
+[INFO] gate: gameplay 101 checked, 101 matched, 0 mismatched, 0 unmapped
+[INFO] gameplay: upstream hooks installed
+[INFO] MinHook already initialised
+[INFO] core: installed CreateMutexA compatibility hook
+[INFO] core: installed FindWindowA compatibility hook for Windows 10/11
+[INFO] core: installed ExitProcess tracking hook
+[INFO] core: installed MessageBoxA tracking hook
+[INFO] core: installed RegQueryValueExA portability hook
+[INFO] core: installed environment check bypass hook at 0x00410E50
+[INFO] graphics: disabled by config
+[INFO] analytics: Live Tactical Intelligence & xG engine initialized
+[INFO] telemetry/ipc: server ready on \\.\pipe\PES6Remaster_Telemetry
+[INFO] telemetry: sampling every 250 ms
+[INFO] broadcast: Intelligent Broadcast Director initialized (base=1430.0, mid=1.15x, box=0.85x)
+[INFO] gameplay_enhanced: Enhanced Mode active [Width=1.05x, PressCap=1.10x, PassLead=1.05x, Drag=1.00x]
+[INFO] fileio: createW "C:\Users\dream\Downloads\PES06Remastered-main\test_game\remaster.log" access=write disposition=4 -> 00000264
+[INFO] fileio: 6 file hooks installed
+[INFO] fileio: watching "C:\Users\dream\OneDrive\Documents\KONAMI\Pro Evolution Soccer 6\save"
+[INFO] assets: no pack index at C:\Users\dream\Downloads\PES06Remastered-main\test_game\remaster_pack\index.txt
+[INFO] assets: no pack loaded - the hook will only observe
+[INFO] hook 'assets.unpack' -> 0x008CD490 (prologue 8B 44 24 10 8B)
+[INFO] assets: unpack hook verified and installed at 0x008CD490
+[INFO] assets: 0 inflated, 0 replaced
+[INFO] hooks installed: 1
+[INFO]   [0] assets.unpack                target=0x008CD490 detour=0x726A9E90
+[INFO] remaster.asi ready
+[INFO] core: environment and single-instance check bypassed; returning success (1)
+[INFO] core: RegQueryValueExA('installdir') redirected -> 'C:\Users\dream\Downloads\PES06Remastered-main\test_game\'
+[INFO] telemetry: label file is C:\Users\dream\Downloads\PES06Remastered-main\test_game\remaster_scan\label.txt
+[INFO] telemetry: label file is readable
+[WARN] core: MessageBoxA called: caption='Fatal error', text='Can't initialized Direct3D. (init)'
+[WARN] core: ExitProcess called with code 0 from 0041C94B
+[WARN]   frame[0] = 726A1507
+[WARN]   frame[1] = 0041CAB0
+[WARN]   frame[2] = 76955D49
+[WARN]   frame[3] = 77E6D6CB
+[WARN]   frame[4] = 77E6D651

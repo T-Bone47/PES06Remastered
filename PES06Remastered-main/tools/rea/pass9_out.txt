@@ -1,0 +1,187 @@
+
+################ 0x00411730  window creation caller (hardcoded 640x480) ################
+// function FUN_00411730 @ 00411730  size=361
+
+// ---- DECOMPILATION ----
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+undefined4 FUN_00411730(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+
+{
+  int iVar1;
+  HDC hdc;
+  int iVar2;
+  HWND hWnd;
+  undefined4 unaff_ESI;
+  undefined4 unaff_EDI;
+  tagMSG local_24;
+  DWORD local_8;
+  
+  iVar1 = thunk_FUN_0448c4e0(&DAT_00f86420,0);
+  if ((iVar1 == 0) && (iVar1 = FUN_00410e50(), iVar1 != 0)) {
+    hdc = GetDC((HWND)0x0);
+    iVar1 = GetDeviceCaps(hdc,0xc);
+    ReleaseDC((HWND)0x0,hdc);
+    iVar2 = thunk_FUN_004c7260();
+    if (iVar2 != 0) {
+      thunk_FUN_044b7610(0,"init class");
+    }
+    hWnd = (HWND)FUN_00410c20(param_1,0x280,0x1e0);
+    if (hWnd == (HWND)0x0) {
+      hWnd = (HWND)thunk_FUN_044b7610(0,"init window");
+    }
+    DAT_00f863f8 = param_1;
+    _DAT_00f863fc = param_4;
+    DAT_00f86414 = 0;
+    DAT_00f86469 = '\0';
+    DAT_00f863f4 = hWnd;
+    if (iVar1 < 9) {
+      MessageBoxA(hWnd,"You cannot run the game in Windowed Mode with the current display settings."
+                  ,"Pro Evolution Soccer 6",0x1030);
+    }
+    CoInitialize((LPVOID)0x0);
+    timeBeginPeriod(1);
+    local_8 = timeGetTime();
+    _DAT_00f86400 = (double)(int)local_8;
+    if ((int)local_8 < 0) {
+      _DAT_00f86400 = _DAT_00f86400 + 4294967296.0;
+    }
+    do {
+      iVar1 = PeekMessageA(&local_24,(HWND)0x0,0,0,1);
+      while (iVar1 != 0) {
+        TranslateMessage(&local_24);
+        if (local_24.message == 0x12) {
+          thunk_FUN_044cc820(unaff_EDI,unaff_ESI);
+          return local_24.wParam;
+        }
+        DispatchMessageA(&local_24);
+        iVar1 = PeekMessageA(&local_24,(HWND)0x0,0,0,1);
+      }
+      FUN_00411490();
+    } while (DAT_00f86469 == '\0');
+    thunk_FUN_044cc820(unaff_EDI,unaff_ESI);
+  }
+  return 0;
+}
+
+
+
+// ---- LISTING ----
+00411730  55                   PUSH EBP
+00411731  8bec                 MOV EBP,ESP
+00411733  83ec20               SUB ESP,0x20
+00411736  53                   PUSH EBX
+00411737  56                   PUSH ESI
+00411738  57                   PUSH EDI
+00411739  6a00                 PUSH 0x0
+0041173b  682064f800           PUSH 0xf86420
+00411740  e83ba70000           CALL 0x0041be80
+00411745  83c408               ADD ESP,0x8
+00411748  85c0                 TEST EAX,EAX
+0041174a  0f852d010000         JNZ 0x0041187d
+00411750  e8fbf6ffff           CALL 0x00410e50
+00411755  85c0                 TEST EAX,EAX
+00411757  0f8420010000         JZ 0x0041187d
+0041175d  6a00                 PUSH 0x0
+0041175f  ff156cd2b700         CALL dword ptr [0x00b7d26c]
+00411765  8bf0                 MOV ESI,EAX
+00411767  6a0c                 PUSH 0xc
+00411769  56                   PUSH ESI
+0041176a  ff1524d0b700         CALL dword ptr [0x00b7d024]
+00411770  56                   PUSH ESI
+00411771  6a00                 PUSH 0x0
+00411773  8bd8                 MOV EBX,EAX
+00411775  ff1568d2b700         CALL dword ptr [0x00b7d268]
+0041177b  8b7508               MOV ESI,dword ptr [EBP + 0x8]
+0041177e  8bd6                 MOV EDX,ESI
+00411780  e89bfcffff           CALL 0x00411420
+00411785  85c0                 TEST EAX,EAX
+00411787  740c                 JZ 0x00411795
+00411789  68c0deb700           PUSH 0xb7dec0
+0041178e  6a00                 PUSH 0x0
+00411790  e8bbf5ffff           CALL 0x00410d50
+00411795  8b7d14               MOV EDI,dword ptr [EBP + 0x14]
+00411798  68e0010000           PUSH 0x1e0
+0041179d  6880020000           PUSH 0x280
+004117a2  56                   PUSH ESI
+004117a3  8bc7                 MOV EAX,EDI
+004117a5  e876f4ffff           CALL 0x00410c20
+004117aa  83c40c               ADD ESP,0xc
+004117ad  85c0                 TEST EAX,EAX
+004117af  750b                 JNZ 0x004117bc
+004117b1  68b4deb700           PUSH 0xb7deb4
+004117b6  50                   PUSH EAX
+004117b7  e894f5ffff           CALL 0x00410d50
+004117bc  83fb08               CMP EBX,0x8
+004117bf  a3f463f800           MOV [0x00f863f4],EAX
+004117c4  8935f863f800         MOV dword ptr [0x00f863f8],ESI
+004117ca  893dfc63f800         MOV dword ptr [0x00f863fc],EDI
+004117d0  c6051464f80000       MOV byte ptr [0x00f86414],0x0
+004117d7  c6056964f80000       MOV byte ptr [0x00f86469],0x0
+004117de  7f16                 JG 0x004117f6
+004117e0  6830100000           PUSH 0x1030
+004117e5  68d0dcb700           PUSH 0xb7dcd0
+004117ea  6868deb700           PUSH 0xb7de68
+004117ef  50                   PUSH EAX
+004117f0  ff1594d2b700         CALL dword ptr [0x00b7d294]
+004117f6  6a00                 PUSH 0x0
+004117f8  ff15dcd3b700         CALL dword ptr [0x00b7d3dc]
+004117fe  6a01                 PUSH 0x1
+00411800  ff1534d3b700         CALL dword ptr [0x00b7d334]
+00411806  ff153cd3b700         CALL dword ptr [0x00b7d33c]
+0041180c  85c0                 TEST EAX,EAX
+0041180e  8945fc               MOV dword ptr [EBP + -0x4],EAX
+00411811  db45fc               FILD dword ptr [EBP + -0x4]
+00411814  7d06                 JGE 0x0041181c
+00411816  dc0558deb700         FADD double ptr [0x00b7de58]
+0041181c  8b3564d2b700         MOV ESI,dword ptr [0x00b7d264]
+00411822  dd1d0064f800         FSTP double ptr [0x00f86400]
+00411828  8b1d60d2b700         MOV EBX,dword ptr [0x00b7d260]
+0041182e  8b3d5cd2b700         MOV EDI,dword ptr [0x00b7d25c]
+00411834  6a01                 PUSH 0x1
+00411836  6a00                 PUSH 0x0
+00411838  6a00                 PUSH 0x0
+0041183a  6a00                 PUSH 0x0
+0041183c  8d45e0               LEA EAX,[EBP + -0x20]
+0041183f  50                   PUSH EAX
+00411840  ffd6                 CALL ESI
+00411842  85c0                 TEST EAX,EAX
+00411844  7424                 JZ 0x0041186a
+00411846  8d4de0               LEA ECX,[EBP + -0x20]
+00411849  51                   PUSH ECX
+0041184a  ffd3                 CALL EBX
+0041184c  837de412             CMP dword ptr [EBP + -0x1c],0x12
+00411850  7436                 JZ 0x00411888
+00411852  8d55e0               LEA EDX,[EBP + -0x20]
+00411855  52                   PUSH EDX
+00411856  ffd7                 CALL EDI
+00411858  6a01                 PUSH 0x1
+0041185a  6a00                 PUSH 0x0
+0041185c  6a00                 PUSH 0x0
+0041185e  6a00                 PUSH 0x0
+00411860  8d45e0               LEA EAX,[EBP + -0x20]
+00411863  50                   PUSH EAX
+00411864  ffd6                 CALL ESI
+00411866  85c0                 TEST EAX,EAX
+00411868  75dc                 JNZ 0x00411846
+0041186a  e821fcffff           CALL 0x00411490
+0041186f  a06964f800           MOV AL,[0x00f86469]
+00411874  84c0                 TEST AL,AL
+00411876  74bc                 JZ 0x00411834
+00411878  e853f2ffff           CALL 0x00410ad0
+0041187d  33c0                 XOR EAX,EAX
+0041187f  5f                   POP EDI
+00411880  5e                   POP ESI
+00411881  5b                   POP EBX
+00411882  8be5                 MOV ESP,EBP
+00411884  5d                   POP EBP
+00411885  c21000               RET 0x10
+00411888  e843f2ffff           CALL 0x00410ad0
+0041188d  8b45e8               MOV EAX,dword ptr [EBP + -0x18]
+00411890  5f                   POP EDI
+00411891  5e                   POP ESI
+00411892  5b                   POP EBX
+00411893  8be5                 MOV ESP,EBP
+00411895  5d                   POP EBP
+00411896  c21000               RET 0x10

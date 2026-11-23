@@ -1,0 +1,4 @@
+# Stadium info file
+built = 1926
+capacity = 80018
+city = Milan

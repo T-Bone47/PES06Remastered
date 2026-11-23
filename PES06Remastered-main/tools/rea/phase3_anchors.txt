@@ -1,0 +1,24 @@
+0x00BB4700  OnMatchWaitInit
+0x00BB4778  OnExecMatchEnvStepInit1
+0x00BB4790  OnExecMatchEnvStepEnd
+0x00BB47A8  OnExecMatchPsetStepInit1
+0x00BB4A64  OnSectMatchEnvInit
+0x00BB4A78  OnSectMatchPsetInit
+0x00B921CC  ResFormation
+0x00B924D8  FormationReleaseFunc
+0x00B8F078  formation
+0x00B8F538  TEAM_A
+0x00B8F540  TEAM_H
+0x00BAB010  ball_random
+0x00BAB054  ball_16
+0x00BAB074  ball_12
+0x00BAB084  ball_10
+0x00BAB1B8  position
+0x00BA2AAC  BALL DISP
+0x00BA29C8  player_side[%s]
+0x00B7DA9C  can't support texture format
+0x00BAA79C  formation_opd_01
+0x00BAA7B0  formation_opd_00
+0x00B921DC  ResTeamSelectInit
+0x00BA9D5C  open_ml_pitch
+0x00BA9788  bg_exhibition_player

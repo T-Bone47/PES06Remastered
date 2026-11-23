@@ -1,0 +1,1 @@
+0x0040C270  texture setup function (contains the format-table walk)

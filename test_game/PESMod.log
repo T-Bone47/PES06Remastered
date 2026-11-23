@@ -1,0 +1,52 @@
+PESMod Log started: Mon Nov 23 20:23:52 2026
+
+[PESMod] ===========================
+[PESMod] PESMod ASI v1.0 loading...
+[PESMod] Configuration loaded.
+[PESMod] MinHook initialised.
+[Hooks] Installing hooks...
+[ClubHooks] Registering...
+[Leagues] MAX_PANEL_SLOTS=20 (no INIs above id=19; highest found=-1).
+[Leagues] panel_count auto = 3 (ceil(20 slots / 8 per page), min 3).
+[ClubHooks] All function pointers resolved.
+[ClubHooks] LoadClubTeamSlots installed at 0x009ED730
+[ClubHooks] LoadCompetitionMenuTeams installed at 0x009E25A0
+[ClubHooks] SetTeamList installed at 0x00B07B00
+[ClubHooks] InitClubSelectionScreen installed at 0x009EE940
+[ClubHooks] CreateLeagueSelectionPanel[v2] installed at 0x00B09050
+[ClubHooks] BuildLeaguePanelVisualSlots installed at 0x00B083B0
+[ClubHooks] GetTeamName installed at 0x00863570
+[ClubHooks] CrestResolve installed at 0x00B3BEB0
+[ClubHooks] BadgeRender installed at 0x00B0F990
+[ClubHooks] BadgeRenderCdecl installed at 0x00B0FA80
+[ClubHooks] ComputeBadgeSlot installed at 0x009B0390
+[ClubHooks] BadgeSet installed at 0x00B0F8B0
+[ClubHooks] PanelRefresh installed at 0x00B08B40
+[ClubHooks] DestroyPanel installed at 0x00B0AC50
+[ClubHooks] PanelNavUpdate installed at 0x00B0AC40
+[ClubHooks] LoadBothTeamKitData installed at 0x00969790
+[ClubHooks] ExtractKitColor installed at 0x00968E70
+[ClubHooks] IsTeamKitEdited installed at 0x008654D0
+[ClubHooks] LoadTeamKitDataBySlot installed at 0x00969610
+[ClubHooks] Match_SetupKitData installed at 0x00968700
+[ClubHooks] Match_SetupKitData2 installed at 0x00968960
+[ClubHooks] GetTeamKitData installed at 0x00865240
+[ClubHooks] GetTeamKitDataB installed at 0x00865380
+[ClubHooks] GetTeamKitDataC installed at 0x00865430
+[ClubHooks] FillKitVariantSlot installed at 0x00967170
+[ClubHooks] FillKitTeamSlot installed at 0x00966F70
+[ClubHooks] GetBoneWorldPosition installed at 0x00950490
+[ClubHooks] GetBoneScale installed at 0x00950580
+[ClubHooks] GetCellPosition installed at 0x00B0FCD0
+[ClubHooks] CreateChildNode[INSTRUMENTATION] installed at 0x00950A00
+[ClubHooks] GetTeamPlayerID installed at 0x00862710
+[ClubHooks] GetPlayerRecord installed at 0x00861B90
+[ClubHooks] GetTeamPlayerAttr installed at 0x00862C10
+[ClubHooks] SetTeamPlayerAttr installed at 0x00862200
+[ClubHooks] SetTeamPlayerID installed at 0x00861AD0
+[ClubHooks] Registration complete. MAX_PANEL_SLOTS=20
+[LeagueTeams] Installing hook at 0x009D2EC0...
+[LeagueTeams] Hook installed OK.
+[Hooks] All hooks installed.
+[PESMod] Initialisation complete.
+[PESMod] ===========================

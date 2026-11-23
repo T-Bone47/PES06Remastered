@@ -1,0 +1,9 @@
+{
+  "downloaded": 17,
+  "candidates_processed": 33,
+  "statuses": {
+    "DOWNLOADED": 17,
+    "SKIPPED": 0,
+    "FAILED": 16
+  }
+}

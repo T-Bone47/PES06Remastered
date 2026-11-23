@@ -1,0 +1,2 @@
+0x0065B4E0  NewFileFromAFS - the AFS request entry point
+0x008CD490  the unpack routine

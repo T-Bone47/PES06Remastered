@@ -1,0 +1,70 @@
+
+################ target: 0x00410C20 ################
+  (resolving as address 00410c20)
+  004117a5  UNCONDITIONAL_CALL 0x00410C20   in FUN_00411730
+  -> 1 call site(s), 1 function(s)
+
+  // ===== FUN_00411730 @ 00411730 =====
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+undefined4 FUN_00411730(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+
+{
+  int iVar1;
+  HDC hdc;
+  int iVar2;
+  HWND hWnd;
+  undefined4 unaff_ESI;
+  undefined4 unaff_EDI;
+  tagMSG local_24;
+  DWORD local_8;
+  
+  iVar1 = thunk_FUN_0448c4e0(&DAT_00f86420,0);
+  if ((iVar1 == 0) && (iVar1 = FUN_00410e50(), iVar1 != 0)) {
+    hdc = GetDC((HWND)0x0);
+    iVar1 = GetDeviceCaps(hdc,0xc);
+    ReleaseDC((HWND)0x0,hdc);
+    iVar2 = thunk_FUN_004c7260();
+    if (iVar2 != 0) {
+      thunk_FUN_044b7610(0,"init class");
+    }
+    hWnd = (HWND)FUN_00410c20(param_1,0x280,0x1e0);
+    if (hWnd == (HWND)0x0) {
+      hWnd = (HWND)thunk_FUN_044b7610(0,"init window");
+    }
+    DAT_00f863f8 = param_1;
+    _DAT_00f863fc = param_4;
+    DAT_00f86414 = 0;
+    DAT_00f86469 = '\0';
+    DAT_00f863f4 = hWnd;
+    if (iVar1 < 9) {
+      MessageBoxA(hWnd,"You cannot run the game in Windowed Mode with the current display settings."
+                  ,"Pro Evolution Soccer 6",0x1030);
+    }
+    CoInitialize((LPVOID)0x0);
+    timeBeginPeriod(1);
+    local_8 = timeGetTime();
+    _DAT_00f86400 = (double)(int)local_8;
+    if ((int)local_8 < 0) {
+      _DAT_00f86400 = _DAT_00f86400 + 4294967296.0;
+    }
+    do {
+      iVar1 = PeekMessageA(&local_24,(HWND)0x0,0,0,1);
+      while (iVar1 != 0) {
+        TranslateMessage(&local_24);
+        if (local_24.message == 0x12) {
+          thunk_FUN_044cc820(unaff_EDI,unaff_ESI);
+          return local_24.wParam;
+        }
+        DispatchMessageA(&local_24);
+        iVar1 = PeekMessageA(&local_24,(HWND)0x0,0,0,1);
+      }
+      FUN_00411490();
+    } while (DAT_00f86469 == '\0');
+    thunk_FUN_044cc820(unaff_EDI,unaff_ESI);
+  }
+  return 0;
+}
+
+

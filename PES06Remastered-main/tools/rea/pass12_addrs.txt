@@ -1,0 +1,3 @@
+0x00F83EAA  fullscreen/windowed flag (1 = fullscreen?)
+0x00F83EAB  mirror flag
+0x004033C0  called with (DAT_00f83eab == 0) - probably the windowed-mode setup

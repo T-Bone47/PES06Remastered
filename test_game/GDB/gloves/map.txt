@@ -1,0 +1,2 @@
+# Gloveserver Map
+# Format: <PlayerID>,"<glove_texture.png>"

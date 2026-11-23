@@ -1,0 +1,4 @@
+# Stadium info file
+built = 1957
+capacity = 98772
+city = Barcelona

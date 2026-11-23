@@ -1,0 +1,7 @@
+LIBRARY d3d8
+EXPORTS
+    Direct3DCreate8                           = d3d8o.Direct3DCreate8
+    DebugSetMute                              = d3d8o.DebugSetMute
+    Direct3D8EnableMaximizedWindowedModeShim  = d3d8o.Direct3D8EnableMaximizedWindowedModeShim
+    ValidatePixelShader                       = d3d8o.ValidatePixelShader
+    ValidateVertexShader                      = d3d8o.ValidateVertexShader

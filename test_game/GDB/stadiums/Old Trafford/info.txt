@@ -1,0 +1,4 @@
+# Stadium info file
+built = 1910
+capacity = 76212
+city = Manchester

@@ -1,0 +1,72 @@
+[INFO] remaster.asi attaching (pid 23328)
+[INFO] config loaded from C:\Users\dream\Downloads\PES06Remastered-main\PES 6 game files\remaster.ini
+[INFO] manifest loaded from C:\Users\dream\Downloads\PES06Remastered-main\PES 6 game files\remaster_manifest.txt
+[INFO] gate: 119 addresses checked, 119 matched, 0 mismatched, 0 unmapped
+[INFO] gate: gameplay 101 checked, 101 matched, 0 mismatched, 0 unmapped
+[INFO] gameplay: upstream hooks installed
+[INFO] MinHook already initialised
+[INFO] core: installed CreateMutexA compatibility hook
+[INFO] core: installed FindWindowA compatibility hook for Windows 10/11
+[INFO] core: installed ExitProcess tracking hook
+[INFO] core: installed MessageBoxA tracking hook
+[INFO] core: installed RegQueryValueExA portability hook
+[INFO] core: installed environment check bypass hook at 0x00410E50
+[INFO] graphics: quality preset set to 'ultra' (preset=4)
+[INFO] hook 'graphics.d3d_init' -> 0x00404C60 (prologue A0 A5 3E F8 00)
+[INFO] hook 'graphics.create_window' -> 0x00410C20 (prologue 83 EC 10 83 C0)
+[INFO] assets: registered pitch_stadium_default_turf (pitch, 2048x1024, crc=0x00000000)
+[INFO] assets: registered pitch_turf_square_fallback (pitch, 1024x1024, crc=0x00000000)
+[INFO] assets: registered kit_team_alpha_home (kit, 512x256, crc=0x00000000)
+[INFO] assets: registered kit_team_beta_away (kit, 512x256, crc=0x2B3C4D5E)
+[INFO] assets: registered ball_match_classic (ball, 256x256, crc=0x6F7A8B9C)
+[INFO] assets: registered ui_radar_overlay (ui, 256x128, crc=0x00000000)
+[INFO] assets: registered pitch_adboard_default (pitch, 512x64, crc=0x00000000)
+[INFO] assets: registered stadium_crowd_default (stadium, 256x64, crc=0x00000000)
+[INFO] assets: registered pitch_goal_net_default (pitch, 256x256, crc=0x00000000)
+[INFO] assets: registered ui_crest_arsenal (ui, 256x256, crc=0x00000000)
+[INFO] assets: registered ui_crest_chelsea (ui, 256x256, crc=0x00000000)
+[INFO] assets: registered ui_crest_barcelona (ui, 256x256, crc=0x00000000)
+[INFO] assets: registered ui_crest_realmadrid (ui, 256x256, crc=0x00000000)
+[INFO] assets: registered ui_emblem_ucl (ui, 256x256, crc=0x00000000)
+[INFO] assets: manifest C:\Users\dream\Downloads\PES06Remastered-main\PES 6 game files\remaster_pack\manifest.json loaded (14 valid assets registered)
+[INFO] hires: loaded 14 assets from C:\Users\dream\Downloads\PES06Remastered-main\PES 6 game files\remaster_pack\manifest.json
+[INFO] hook 'd3d.create_device' -> 0x00405300 (prologue E9 CB E7 38 72)
+[INFO] d3d8: device creation hook installed at 0x00405300
+[INFO] hook 'tex.set_size' -> 0x00874A20 (prologue E9 9B F6 F1 71)
+[INFO] d3d8: texture size hook installed at 0x00874A20
+[INFO] postprocess: initialized [enabled=1, contrast=1.10, vibrance=1.15, gamma=1.00, hud=1]
+[INFO] modern_hud: Broadcast presentation score bug initialized
+[INFO] analytics: Live Tactical Intelligence & xG engine initialized
+[INFO] telemetry/ipc: server ready on \\.\pipe\PES6Remaster_Telemetry
+[INFO] telemetry: sampling every 250 ms
+[INFO] broadcast: Intelligent Broadcast Director initialized (base=1430.0, mid=1.15x, box=0.85x)
+[INFO] gameplay_enhanced: Enhanced Mode active [Width=1.05x, PressCap=1.10x, PassLead=1.05x, Drag=1.00x]
+[INFO] fileio: createW "C:\Users\dream\Downloads\PES06Remastered-main\PES 6 game files\remaster.log" access=write disposition=4 -> 000002C4
+[INFO] fileio: 6 file hooks installed
+[INFO] fileio: watching "C:\Users\dream\OneDrive\Documents\KONAMI\Pro Evolution Soccer 6\save"
+[INFO] assets: no pack index at C:\Users\dream\Downloads\PES06Remastered-main\PES 6 game files\remaster_pack\index.txt
+[INFO] assets: no pack loaded - the hook will only observe
+[INFO] hook 'assets.unpack' -> 0x008CD490 (prologue 8B 44 24 10 8B)
+[INFO] assets: unpack hook verified and installed at 0x008CD490
+[INFO] assets: 0 inflated, 0 replaced
+[INFO] hooks installed: 5
+[INFO]   [0] graphics.d3d_init            target=0x00404C60 detour=0x72793230
+[INFO]   [1] graphics.create_window       target=0x00410C20 detour=0x727931C0
+[INFO]   [2] d3d.create_device            target=0x00405300 detour=0x72793AD0
+[INFO]   [3] tex.set_size                 target=0x00874A20 detour=0x727940C0
+[INFO]   [4] assets.unpack                target=0x008CD490 detour=0x72799E90
+[INFO] remaster.asi ready
+[INFO] core: environment and single-instance check bypassed; returning success (1)
+[INFO] graphics: window 640x480 -> 1280x720
+[INFO] core: RegQueryValueExA('installdir') redirected -> 'C:\Users\dream\Downloads\PES06Remastered-main\PES 6 game files\'
+[INFO] telemetry: label file is C:\Users\dream\Downloads\PES06Remastered-main\PES 6 game files\remaster_scan\label.txt
+[INFO] telemetry: label file is readable
+[INFO] graphics: resolution set to 1280x720, aspect=1.7778 (projWidth=682.67, cullWidth=683)
+[INFO] graphics: internal rendering resolution set to 1920x1080
+[WARN] core: MessageBoxA called: caption='Fatal error', text='Can't initialized Direct3D. (init)'
+[WARN] core: ExitProcess called with code 0 from 0041C94B
+[WARN]   frame[0] = 72791507
+[WARN]   frame[1] = 0041CAB0
+[WARN]   frame[2] = 76955D49
+[WARN]   frame[3] = 77E6D6CB
+[WARN]   frame[4] = 77E6D651
